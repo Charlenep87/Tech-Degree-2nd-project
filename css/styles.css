@@ -6,9 +6,20 @@
 body {
 display: flex;
 flex-direction: column;
+align-content: center;
 min-height: 100vh;
+font-family: 'Roboto', 'sans-serif';
+font-size: large;
 margin: 0 auto;
 max-width: 1024px;
+color: black;
+background-color: #fff;
+}
+
+nav-img {
+	max-width: 70%;
+	display: inline;
+	
 }
 ul {
 list-style: none;
@@ -41,14 +52,16 @@ nav {
   }  
 
 
+/*
   .top-nav {
-    margin-top: 30px;
+    margin-top: 20px;
   }
+*/
   
   .top-nav li {
     padding: 10px 0;
     margin: 5px auto;
-/*    background-color: #fff;*/
+    background-color: #fff;
 	color: black;
   }
 
@@ -114,21 +127,16 @@ width: 100%;
 display: block;
 }
 footer {
-/*  display: flex;*/
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
+  background-color: #f5f5f5;
+  color: #272727;
 	
-/*
-  margin-top: auto;
-  padding: 0 20px;
-*/
-  height: 100px;
-  background-color: #107896;
 }
-.full {
-display: none;
-}
-.contact-info li {
+
+.contact-container {
 text-align: center;
 margin: 10px 10px;
 }
@@ -147,9 +155,14 @@ display: flex;
   padding: 200px 20px;
 	
 }
-#contact {
+#contact-container {
 text-align: center;
 	padding-top: 20px;
+}
+
+.endofpage {
+	
+	display: none;
 }
 .credit {
   border-top: 1px solid #DCDCDC;
@@ -189,7 +202,7 @@ text-align: center;
     }
   
     .top-nav li {
-      display: inline;
+      display: grid;
       margin-right: 15px;
       background-color: transparent;
     }
@@ -197,7 +210,10 @@ text-align: center;
     .top-nav li:last-child {
       margin-right: 0;
     }
-  
+  .header {
+			
+			display: grid;
+		}
     .top-nav a {
       color: black;
     }
@@ -211,10 +227,10 @@ text-align: center;
       .top {
         display: none;
       }
-      .full {
-        display: inline;
-        margin-left: 20px;
-      }
+     .endofpage {
+      display: inline;
+      
+  }
       .main-pic {
     width: 40%;
 
@@ -226,8 +242,17 @@ text-align: center;
    }
 
 }
+nav-img {
+	max-width: 70%;
+	display: grid;
+	margin: 3em auto 2em;
+}
 
-.contact {
+
+h2 {
+	text-align: center;
+}
+.contact-container {
 	
 	text-align: center;
 	background-color: whitesmoke;
@@ -238,11 +263,22 @@ text-align: center;
   /*desktop layout*/
     @media (min-width: 1024px) {
         nav {
-          display: flex;
+          display: block;
           justify-content: space-between;
           align-items: center;
 		 
         }
+		
+	.header {
+			
+			display: inline-block;
+		}
+		
+	
+  .endofpage {
+      display: inline;
+      
+  }
       
         .top-nav, 
         .top-nav li {
@@ -254,8 +290,8 @@ text-align: center;
           }
       }
 
-/*
-.container{
+
+
 	
 	display: flex;
 	
