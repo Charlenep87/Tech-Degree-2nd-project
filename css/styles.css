@@ -238,7 +238,7 @@ footer {
     }
 
     .top-nav li {
-/*        display: inline-block;*/
+        display: inline-block;
         width: auto;
         margin-right: 15px;
         background-color: transparent;
