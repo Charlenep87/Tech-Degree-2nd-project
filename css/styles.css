@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 5px;
+    margin: 2px;
+   
 }
 
 body {
@@ -42,6 +42,7 @@ ul {
 
     list-style: none;
     padding: 0;
+	text-align: center;
 
 }
 
@@ -309,6 +310,10 @@ footer {
     .endofpage a:active {
         color: green;
     }
+	
+	p {
+		text-align: left;
+	}
 
 }
 
@@ -337,7 +342,7 @@ footer {
         justify-content: space-between;
         margin: 1em auto;
         background-color: #f7f7ff;
-        ;
+        
     }
 
     .name {
@@ -355,6 +360,7 @@ footer {
 
     .intro {
         flex-direction: row-reverse;
+		
     }
 
     header {
@@ -377,5 +383,9 @@ footer {
     .footer-name li {
         background-color: #f7f7ff;
     }
+	
+	p {
+		text-align: left;
+	}
 
 }
